@@ -1,0 +1,6 @@
+<idea-plugin>
+    <idea-version since-build="182.2371.4"/>
+    <extensions defaultExtensionNs="com.intellij">
+        <errorHandler implementation="net.seesharpsoft.intellij.plugins.csv.CsvGithubIssueSubmitter" />
+    </extensions>
+</idea-plugin>
