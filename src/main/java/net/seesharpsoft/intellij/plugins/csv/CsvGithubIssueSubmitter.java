@@ -173,6 +173,7 @@ public class CsvGithubIssueSubmitter extends ErrorReportSubmitter {
         return builder.toString();
     }
 
+    @Override
     public String getPrivacyNoticeText() {
         StringBuilder builder = new StringBuilder()
                 .append("An automated issue report contains the provided message, ")

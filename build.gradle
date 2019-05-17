@@ -5,7 +5,7 @@ buildscript {
         maven { url 'https://jitpack.io' }
     }
     dependencies {
-        classpath 'com.github.hurricup:gradle-grammar-kit-plugin:2018.1.1'
+        classpath 'com.github.hurricup:gradle-grammar-kit-plugin:2019.1'
     }
 }
 
@@ -70,12 +70,12 @@ idea {
 apply plugin: 'org.jetbrains.intellij'
 intellij {
     // IDE version - https://www.jetbrains.com/intellij-repository/releases
-    version = System.getenv().getOrDefault('IDEA_VERSION', 'IC-2019.1.2')
+    version = System.getenv().getOrDefault('IDEA_VERSION', 'IC-2019.1')
     pluginName = 'CSV Plugin'
     instrumentCode = true
     updateSinceUntilBuild = false
     downloadSources = false
-    plugins = ['Git4Idea', 'GitHub']
+    plugins = ['git4idea', 'github']
 }
 publishPlugin {
     username = System.getenv().getOrDefault('JI_USER', '')
